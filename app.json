@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "laxo.one",
+    "slug": "laxoone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "40763023-d2da-436a-a245-d0c2b44a1555"
+      }
+    },
+    "owner": "maxpups",
+    "notifications": {
+      "vapidPublicKey": "BP-d7zPj5TBkfNk_F90rOSEQqtyl6FltO6F8Ob8k9l0ss3BDuAMdzCJXb21KhWvugSe7wE9UWqHsSO13j00oP_8"
+    }
+  }
+}
