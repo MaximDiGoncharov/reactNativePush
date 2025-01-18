@@ -8,7 +8,7 @@ function sendExpoNotification($expoPushToken, $subject, $message) {
        'body' => $message,
        'data' => [
          'extraData' => 'Some additional data', 
-         'image' =>'https://laxo.one/assets/uploads/2024/10/main-cross.webp'
+         'imageUrl' =>'https://team.laxo.one/uploads/74/1728031753/Laxo%20icon.png?view=1'
       ],
    ];
 
@@ -33,6 +33,7 @@ function sendExpoNotification($expoPushToken, $subject, $message) {
 
 // Пример использования
 $expoPushToken = 'ExponentPushToken[C5Ro2dMO6SnsEQrFj4CInX]'; // Замените на ваш токен
+$expoPushToken = 'ExponentPushToken[QM1OQSPWsqUMPYMMAIb95M]'; // Замените на ваш токен
 $message = 'Дмитрий Шишмаков обновил контакт «Артем Подворный»';
 $subject = 'Контакт Артем Подворный';
 $response = sendExpoNotification($expoPushToken, $subject, $message);

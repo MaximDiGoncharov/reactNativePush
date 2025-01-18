@@ -4,28 +4,50 @@
     "slug": "laxoone",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon":  "./assets/images/android/logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image":  "./assets/images/android/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "icon": "./assets/images/android/logo.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourapp.identifier",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ]
+      },
+      "notification": {
+        "icon": "./assets/images/android/logo.png",
+        "sound": true
       }
     },
+    "android": {
+      "icon": "./assets/images/android/logo.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/notification-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourapp.identifier"
+    },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/notification-icon.png"
     },
     "plugins": [
-      "expo-notifications"
+      [
+        "expo-notifications",
+        {
+          "icon": ".local/assets/images/android/logo.png",
+          "color": "#ffffff",
+          "defaultChannel": "default",
+          "enableBackgroundRemoteNotifications": true
+        }
+      ]
     ],
     "extra": {
       "eas": {
