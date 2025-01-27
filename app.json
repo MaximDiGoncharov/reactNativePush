@@ -4,18 +4,18 @@
     "slug": "laxoone",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon":  "./assets/images/android/logo.png",
+    "icon":  "./assets/images/ios/laxo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image":  "./assets/images/android/logo.png",
+      "image":  "./assets/images/ios/laxo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "icon": "./assets/images/android/logo.png",
+      "icon": "./assets/images/ios/laxo.png",
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourapp.identifier",
+      "bundleIdentifier": "com.reactlaxoone.reactlaxoone",
       "infoPlist": {
         "UIBackgroundModes": [
           "fetch",
@@ -23,17 +23,17 @@
         ]
       },
       "notification": {
-        "icon": "./assets/images/android/logo.png",
+        "icon": "./assets/images/ios/laxo.png",
         "sound": true
       }
     },
     "android": {
-      "icon": "./assets/images/android/logo.png",
+      "icon": "./assets/images/ios/laxo.png",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/notification-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.yourapp.identifier"
+      "package": ""
     },
     "web": {
       "favicon": "./assets/images/notification-icon.png"
@@ -42,7 +42,7 @@
       [
         "expo-notifications",
         {
-          "icon": ".local/assets/images/android/logo.png",
+          "icon": ".local/assets/images/ios/laxo.png",
           "color": "#ffffff",
           "defaultChannel": "default",
           "enableBackgroundRemoteNotifications": true

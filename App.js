@@ -18,7 +18,6 @@ const App = () => {
    const [appState, setAppState] = useState(AppState.currentState);
 
    useEffect(() => {
-      // Обработчик для уведомлений в активном режиме
       const subscription = Notifications.addNotificationReceivedListener(notification => {
          const data = notification?.request?.content?.data;
          const message = notification?.request?.content?.body || 'Новое сообщение';
@@ -44,7 +43,6 @@ const App = () => {
          // );
       });
 
-      // Обработчик для клика на уведомление (в том числе при свернутом приложении)
       const responseListener = Notifications.addNotificationResponseReceivedListener(response => {
          const data = response?.notification?.request?.content?.data;
          if (data?.newUrl) {
@@ -52,7 +50,6 @@ const App = () => {
          }
       });
 
-      // Обновление состояния приложения
       const appStateListener = AppState.addEventListener('change', nextAppState => {
          setAppState(nextAppState);
       });

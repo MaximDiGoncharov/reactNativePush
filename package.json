@@ -10,7 +10,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@expo/metro-runtime": "~4.0.0",
+    "@expo/metro-runtime": "~4.0.1",
     "expo": "~52.0.23",
     "expo-clipboard": "^7.0.0",
     "expo-constants": "~17.0.3",
@@ -20,9 +20,9 @@
     "firebase": "^11.1.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-native": "0.76.5",
+    "react-native": "0.76.6",
     "react-native-web": "~0.19.13",
-    "react-native-webview": "^13.13.1",
+    "react-native-webview": "^13.12.5",
     "web-push": "^3.6.7"
   },
   "devDependencies": {
