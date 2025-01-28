@@ -22,25 +22,6 @@ const App = () => {
          const data = notification?.request?.content?.data;
          const message = notification?.request?.content?.body || 'Новое сообщение';
          const title = notification?.request?.content?.title || 'Уведомление';
-
-         // Alert.alert(
-         //    title,
-         //    message,
-         //    [
-         //       {
-         //          text: 'Закрыть',
-         //          style: 'cancel',
-         //       },
-         //       {
-         //          text: 'Перейти',
-         //          onPress: () => {
-         //             if (data?.newUrl) {
-         //                setUrl(data.newUrl);
-         //             }
-         //          },
-         //       },
-         //    ]
-         // );
       });
 
       const responseListener = Notifications.addNotificationResponseReceivedListener(response => {
@@ -55,7 +36,7 @@ const App = () => {
       });
 
       return () => {
-         // subscription.remove();
+         subscription.remove();
          // responseListener.remove();
          // appStateListener.remove();
       };
