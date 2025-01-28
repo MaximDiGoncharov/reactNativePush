@@ -4,11 +4,11 @@
     "slug": "laxoone",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon":  "./assets/images/ios/laxo.png",
+    "icon": "./assets/images/ios/laxo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image":  "./assets/images/ios/laxo.png",
+      "image": "./assets/images/ios/laxo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -55,6 +55,9 @@
       }
     },
     "owner": "maxpups",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "notifications": {
       "vapidPublicKey": "BP-d7zPj5TBkfNk_F90rOSEQqtyl6FltO6F8Ob8k9l0ss3BDuAMdzCJXb21KhWvugSe7wE9UWqHsSO13j00oP_8"
     }
