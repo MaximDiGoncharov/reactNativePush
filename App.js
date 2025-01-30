@@ -12,10 +12,10 @@ Notifications.setNotificationHandler({
    }),
 });
 
+
+
 const App = () => {
    const deviceToken = useExpoPushToken();
-   const [url, setUrl] = useState(`https://universal.laxo.one/enter/${deviceToken ?? null}`);
-   const [appState, setAppState] = useState(AppState.currentState);
 
    useEffect(() => {
       const subscription = Notifications.addNotificationReceivedListener(notification => {
@@ -26,33 +26,33 @@ const App = () => {
 
       const responseListener = Notifications.addNotificationResponseReceivedListener(response => {
          const data = response?.notification?.request?.content?.data;
-         if (data?.newUrl) {
-            setUrl(data.newUrl);
-         }
+
       });
 
       const appStateListener = AppState.addEventListener('change', nextAppState => {
-         setAppState(nextAppState);
+
       });
 
       return () => {
          subscription.remove();
-         // responseListener.remove();
-         // appStateListener.remove();
       };
    }, []);
-
+   
    return (
       <SafeAreaView style={styles.container}>
-         <WebView source={{ uri: url }} />
+         <WebView
+            source={{ uri: `https://universal.laxo.one/enter/${deviceToken ?? null}` }}
+         />
       </SafeAreaView>
+
    );
 };
-
 const styles = StyleSheet.create({
    container: {
       flex: 1,
+      marginTop: 30,
+      marginBottom: 30,
+      backgroundColor: '#fff', 
    },
 });
-
 export default App;
